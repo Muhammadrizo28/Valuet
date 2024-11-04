@@ -1,0 +1,378 @@
+{
+  "users": [
+    {
+      "id": "342a",
+      "name": "Alex Whell",
+      "login": "cool@gmail.com",
+      "password": "cool",
+      "wallets": [
+        {
+          "name": "Bitcoin",
+          "balance": 0.00073
+        },
+        {
+          "name": "Litecoin",
+          "balance": 0.01822
+        },
+        {
+          "name": "Navcoin",
+          "balance": 151.56609
+        },
+        {
+          "name": "Nano",
+          "balance": 1
+        },
+        {
+          "name": "Peercoin",
+          "balance": 13
+        }
+      ],
+      "transactions": [
+        {
+          "wallet": "Bitcoin",
+          "sum": "0.003",
+          "date": "20.11.2024",
+          "type": "sent",
+          "walletAdress": "dF53Vghft75fMydr89Gd4Ht6r",
+          "userName": "John Stephons"
+        },
+        {
+          "wallet": "GridCoin",
+          "sum": "12.98",
+          "date": "28.11.2024",
+          "type": "sent",
+          "walletAdress": "dF43HDYJB564bndklk564kkl3",
+          "userName": "Alex Feth"
+        },
+        {
+          "wallet": "Peercoin",
+          "sum": "34.09",
+          "date": "21.11.2024",
+          "type": "recieved",
+          "walletAdress": "dF53Vghft75fMydr89Gd4Ht6r",
+          "userName": "John Stephons"
+        },
+        {
+          "wallet": "Dash",
+          "sum": "4.02",
+          "date": "9.11.2024",
+          "type": "recieved",
+          "walletAdress": "dF43HDYJB564bndklk564kkl3",
+          "userName": "Alex Feth"
+        },
+        {
+          "wallet": "Nano",
+          "sum": "9.2",
+          "date": "18.11.2024",
+          "type": "recieved",
+          "walletAdress": "dF53Vghft75fMydr89Gd4Ht6r",
+          "userName": "John Stephons"
+        },
+        {
+          "wallet": "Ethereum",
+          "sum": "0.03",
+          "date": "19.11.2024",
+          "type": "recieved",
+          "walletAdress": "dF53Vghft75fMydr89Gd4Ht6r",
+          "userName": "John Stephons"
+        },
+        {
+          "wallet": "Bitcoin",
+          "sum": "0.001",
+          "date": "23.11.2024",
+          "type": "recieved",
+          "walletAdress": "dF53Vghft75fMydr89Gd4Ht6r",
+          "userName": "John Stephons"
+        },
+        {
+          "wallet": "Dash",
+          "sum": "1",
+          "date": "12.11.2024",
+          "type": "sent",
+          "walletAdress": "dF43HDYJB564bndklk564kkl3",
+          "userName": "Alex Feth"
+        },
+        {
+          "wallet": "Bitcoin",
+          "sum": 0.00033,
+          "date": "2.11.2024",
+          "type": "exchange",
+          "walletAdress": "1 Dash to Bitcoin",
+          "userName": "Exchanged"
+        },
+        {
+          "wallet": "Litecoin",
+          "sum": 0.01822,
+          "date": "2.11.2024",
+          "type": "exchange",
+          "walletAdress": "1 Nano to Litecoin",
+          "userName": "Exchanged"
+        },
+        {
+          "wallet": "Nano",
+          "sum": 0.33361,
+          "date": "2.11.2024",
+          "type": "exchange",
+          "walletAdress": "1 Peercoin to Nano",
+          "userName": "Exchanged"
+        },
+        {
+          "wallet": "Peercoin",
+          "sum": "1",
+          "date": "2.11.2024",
+          "type": "exchange",
+          "walletAdress": "0.33361 Nano to Peercoin",
+          "userName": "Exchanged"
+        }
+      ],
+      "widgets": [
+        "Dash",
+        "GridCoin",
+        "Ethereum",
+        "Litecoin"
+      ],
+      "country": "United States",
+      "job": "Blockchain Developer"
+    },
+    {
+      "id": "296e",
+      "name": "Mister Steve",
+      "login": "mister@gmail.com",
+      "password": "mister",
+      "widgets": [
+        "Nano"
+      ],
+      "wallets": [
+        {
+          "name": "Aeternity",
+          "balance": 12
+        },
+        {
+          "name": "Nano",
+          "balance": 3
+        }
+      ],
+      "transactions": [],
+      "country": "Brazil",
+      "job": "Other"
+    }
+  ],
+  "coinRate": [
+    {
+      "name": "Bitcoin",
+      "shortName": "BTC",
+      "rate": 73780,
+      "volume": "10.96b",
+      "volatility": [
+        "+2.34",
+        "-1.2",
+        "-2.67"
+      ],
+      "changes": [
+        4,
+        12,
+        23,
+        11,
+        32,
+        15,
+        30,
+        26,
+        23,
+        21
+      ],
+      "id": "441b"
+    },
+    {
+      "name": "Dash",
+      "shortName": "DASH",
+      "rate": 24.6,
+      "volume": "81.55m",
+      "volatility": [
+        "-4.24",
+        "+2.4",
+        "+5.27"
+      ],
+      "changes": [
+        12,
+        5,
+        7,
+        10,
+        14,
+        9,
+        12,
+        20,
+        16,
+        22
+      ],
+      "id": "852f"
+    },
+    {
+      "name": "Aeternity",
+      "shortName": "AE",
+      "rate": 0.0237,
+      "volume": "188.564",
+      "volatility": [
+        "+0.33",
+        "-3",
+        "+1.06"
+      ],
+      "changes": [
+        12,
+        9,
+        17,
+        23,
+        10,
+        14,
+        12,
+        17,
+        23,
+        20
+      ],
+      "id": "3460"
+    },
+    {
+      "name": "Ethereum",
+      "shortName": "ETH",
+      "rate": 2440,
+      "volume": "3.94b",
+      "volatility": [
+        "+1.02",
+        "-0.3",
+        "-1.07"
+      ],
+      "changes": [
+        22,
+        25,
+        21,
+        23,
+        29,
+        32,
+        30,
+        26,
+        29,
+        30
+      ],
+      "id": "9e87"
+    },
+    {
+      "name": "Peercoin",
+      "shortName": "PPC",
+      "rate": 0.397,
+      "volume": "26.350",
+      "volatility": [
+        "-2.24",
+        "-5.2",
+        "+5.07"
+      ],
+      "changes": [
+        6,
+        12,
+        15,
+        11,
+        24,
+        32,
+        30,
+        26,
+        12,
+        17
+      ],
+      "id": "8e7d"
+    },
+    {
+      "name": "GridCoin",
+      "shortName": "GRC",
+      "rate": 0.9,
+      "volume": "33.8",
+      "volatility": [
+        "+1.2",
+        "-4.2",
+        "+0.37"
+      ],
+      "changes": [
+        13,
+        23,
+        21,
+        11,
+        21,
+        15,
+        31,
+        26,
+        23,
+        21
+      ],
+      "id": "62a3"
+    },
+    {
+      "name": "Navcoin",
+      "shortName": "NAV",
+      "rate": 0.03669,
+      "volume": "21.164",
+      "volatility": [
+        "+0.07",
+        "-4",
+        "-1.03"
+      ],
+      "changes": [
+        23,
+        32,
+        14,
+        11,
+        21,
+        17,
+        15,
+        12,
+        22,
+        21
+      ],
+      "id": "5400"
+    },
+    {
+      "name": "Litecoin",
+      "shortName": "LTC",
+      "rate": 65.32,
+      "volume": "337.1m",
+      "volatility": [
+        "-0.98",
+        "-0.2",
+        "-1"
+      ],
+      "changes": [
+        26,
+        32,
+        33,
+        29,
+        32,
+        25,
+        27,
+        26,
+        23,
+        29
+      ],
+      "id": "5278"
+    },
+    {
+      "name": "Nano",
+      "shortName": "NANO",
+      "rate": 1.19,
+      "volume": "2.68m",
+      "volatility": [
+        "+0.31",
+        "+2.4",
+        "+0.01"
+      ],
+      "changes": [
+        34,
+        21,
+        23,
+        34,
+        23,
+        15,
+        30,
+        25,
+        21,
+        17
+      ],
+      "id": "6f48"
+    }
+  ]
+}

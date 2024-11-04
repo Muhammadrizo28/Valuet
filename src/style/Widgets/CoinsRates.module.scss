@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+$font_Roboto : "Roboto", sans-serif;
+$font_Raleway : "Raleway", sans-serif;
+
+
+
+
+.widgetRates_cont {
+
+    width: 45%;
+    height: 100%;
+   
+ 
+}
+
+.rateItem {
+
+    width: 100%;
+    height: 32%;
+    display: flex;
+    color: white;
+    font-family: $font_Roboto;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+   
+
+    
+    img {
+
+        width:  25px;
+        height: 25px;
+    }
+
+
+
+}
+
+
+.ratesCont {
+
+    width: 100%;
+    height: 100%;
+}
+
+.rates_txt {
+
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+
+}
+
+.procent_txt {
+
+    font-size: 12px;
+}
+
+
+
+
+@media (max-width: 1440px) {
+
+    .date_txt {
+
+        font-size: 12px;
+
+    }
+
+    .procent_txt {
+
+        font-size: 9px;
+    }
+    
+}
+
+
+@media (max-width: 1200px) {
+
+    .date_txt {
+
+        font-size: 10px;
+
+    }
+
+    .procent_txt {
+
+        font-size: 7px;
+    }
+
+    
+    .rateItem {
+
+        img {
+    
+            width:  20px;
+            height: 20px;
+        }
+
+    }
+    
+    
+}
+
+@media (max-width: 1000px) {
+
+    .date_txt {
+
+        font-size: 8px;
+
+    }
+
+    .procent_txt {
+
+        font-size: 6px;
+    }
+
+    .rateItem {
+
+        img {
+    
+            width:  17px;
+            height: 17px;
+        }
+
+    }
+    
+    
+}
+
+@media (max-width: 880px) {
+
+    .date_txt {
+
+        font-size: 6.6px;
+
+    }
+
+    .procent_txt {
+
+        font-size: 5px;
+    }
+
+    
+    .rateItem {
+
+        img {
+    
+            width:  13px;
+            height: 13px;
+        }
+
+    }
+    
+    
+}
+
+@media (max-width: 430px) {
+
+    .ratesCont {
+
+        width: 100%;
+        height: 70%;
+        margin-top: 25%;
+        margin-left: 10%;
+    }
+
+    .date_txt {
+
+        font-size: 4px;
+
+    }
+
+    .procent_txt {
+
+        font-size: 4px;
+    }
+
+    
+    .rateItem {
+
+        img {
+    
+            width:  11px;
+            height: 11px;
+        }
+
+    }
+    
+    
+}
+
+@media (max-width: 370px) {
+
+    .ratesCont {
+
+        width: 100%;
+        height: 80%;
+        margin-top: 25%;
+        margin-left: 10%;
+    }
+
+    .date_txt {
+
+        font-size: 3.5px;
+
+    }
+
+    .procent_txt {
+
+        font-size: 2.5px;
+    }
+
+    
+    .rateItem {
+
+        img {
+    
+            width:  9px;
+            height: 9px;
+        }
+
+    }
+    
+    
+}

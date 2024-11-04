@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+$font_Roboto : "Roboto", sans-serif;
+$font_Raleway : "Raleway", sans-serif;
+
+
+
+
+.modalWindow_box {
+
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(46.41% 73.99% at 46.63% 48.05%, #20135cf4 0%, #140739f6 92.82%);
+    position: absolute;
+    z-index: 6;
+   
+}
+
+.modalBox {
+
+    width: 50%;
+    height: 60%;
+    background-color: #140739;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-top: 10%;
+    box-shadow: 0px 0 10px 10px rgba(0, 0, 255, 0.015);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.modalHeader {
+
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+
+    img {
+
+        width: 40px;
+        height: 40px;
+        filter: brightness(0) invert(1);
+        margin-right: 1%;
+        cursor: pointer;
+    }
+}
+
+.modalMain_box {
+
+    width: 100%;
+    height: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modalText {
+
+    font-size: 25px;
+    color: white;
+    font-family: $font_Raleway;
+    
+}
+
+.profileModal_box {
+
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(46.41% 73.99% at 46.63% 48.05%, #20135cd3 0%, #140739cf 92.82%);
+
+}
+
+.logoutText {
+
+    color: white;
+    font-family: $font_Roboto;
+}
+
+.logoutButton {
+
+    width: 200px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40%;
+    font-size: 18px;
+    font-size: $font_Roboto;
+    font-weight: 600;
+    cursor: pointer;
+    will-change: transform;
+    transition: 0.5s;
+    &:hover {
+
+        transform: scale(1.07);
+    }
+}
+
+
+@media (max-width : 1200px) {
+
+    .modalText {
+
+        font-size: 20px;
+        color: white;
+        font-family: $font_Raleway;
+        
+    }
+
+}
+
+
+@media (max-width : 1025px) {
+
+    .modalBox {
+
+        width: 50%;
+        height: 50%;
+        background-color: #140739;
+        border-radius: 5px;
+        margin-left: 25%;
+        margin-top: 20%;
+        box-shadow: 0px 0 10px 10px rgba(0, 0, 255, 0.015);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .modalText {
+
+        font-size: 18px;
+        color: white;
+        font-family: $font_Raleway;
+        
+    }
+
+    .modalHeader {
+    
+        img {
+    
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+
+    
+    .logoutText {
+    
+        font-size: 24px;
+    }
+    
+    .logoutButton {
+    
+        width: 140px;
+        height: 25px;
+  
+        font-size: 12px;
+
+    }
+
+
+}
+
+@media (max-width : 770px) {
+
+    .modalText {
+
+        font-size: 15px;
+ 
+    }
+
+    .modalHeader {
+    
+        img {
+    
+            width:  24px;
+            height: 24px;
+        }
+    }
+
+
+    
+    .logoutText {
+    
+        font-size: 20px;
+    }
+    
+    .logoutButton {
+    
+        width: 110px;
+        height: 22px;
+  
+        font-size: 10px;
+
+    }
+
+    .modalBox {
+
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+        margin-top: 23%;
+     
+    }
+}
+
+@media (max-width : 430px) {
+
+    .modalBox {
+
+        width: 70% !important;
+        height: 60% !important;
+        background-color: #140739;
+        border-radius: 5px;
+        margin-left: 15% !important;
+        margin-top: 20%;
+        box-shadow: 0px 0 10px 10px rgba(0, 0, 255, 0.015);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .modalText {
+
+        font-size: 12px;
+ 
+    }
+
+    .modalHeader {
+    
+        img {
+    
+            width:  22px;
+            height: 22px;
+        }
+    }
+
+
+    
+    .logoutText {
+    
+        font-size: 17px;
+    }
+    
+    .logoutButton {
+    
+        width: 90px;
+        height: 19px;
+  
+        font-size: 8px;
+
+    }
+
+    .modalBox {
+
+        width: 50%;
+        height: 38%;
+        margin-left: 25%;
+        margin-top: 35%;
+     
+    }
+}
+
+@media (max-width : 330px) {
+
+    .modalBox {
+
+        width: 70% !important;
+        height: 50% !important;
+        background-color: #140739;
+        border-radius: 5px;
+        margin-left: 15% !important;
+        margin-top: 20%;
+        box-shadow: 0px 0 10px 10px rgba(0, 0, 255, 0.015);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .modalText {
+
+        font-size: 10px;
+ 
+    }
+
+    .modalHeader {
+    
+        img {
+    
+            width:  20px;
+            height: 20px;
+        }
+    }
+
+
+    
+    .logoutText {
+    
+        font-size: 15px;
+    }
+    
+    .logoutButton {
+    
+        width: 80px;
+        height: 17px;
+  
+        font-size: 7px;
+
+    }
+
+    .modalBox {
+
+        width: 50%;
+        height: 30%;
+        margin-left: 25%;
+        margin-top: 65%;
+     
+    }
+}
+
+@media (max-width : 330px) {
+
+    .modalBox {
+
+        width: 70% !important;
+        height: 60% !important;
+        background-color: #140739;
+        border-radius: 5px;
+        margin-left: 15% !important;
+        margin-top: 40% !important;
+        box-shadow: 0px 0 10px 10px rgba(0, 0, 255, 0.015);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .modalText {
+
+        font-size: 10px;
+ 
+    }
+
+    .modalHeader {
+    
+        img {
+            width:  20px;
+            height: 20px;
+        }
+    }
+
+
+    
+    .logoutText {
+    
+        font-size: 15px;
+    }
+    
+    .logoutButton {
+    
+        width: 80px;
+        height: 17px;
+  
+        font-size: 7px;
+
+    }
+
+    .modalBox {
+
+        width: 50%;
+        height: 30%;
+        margin-left: 25%;
+        margin-top: 65%;
+     
+    }
+}

@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+$font_Roboto : "Roboto", sans-serif;
+$font_Raleway : "Raleway", sans-serif;
+
+$underline_color : #1288E8;
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+.overview_middleSide {
+
+    width: 100%;
+    height: 47%;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+
+        border-radius: 5px;
+    }
+}
+
+.balanceWidget_cont {
+
+    width: 24%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0f0b38 93.37%);
+   
+  
+}
+
+
+.spendingsWidget_cont {
+
+    
+    width: 24%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
+
+
+}
+
+.modalWidget {
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 5px 7px 0;
+    transition: 0.3s;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+
+    img {
+
+        width:  40%;
+        height: 40%;
+        margin-top: 40%;
+    }
+
+    p {
+        color: white;
+        margin-top: 30%;
+        font-size: 18px;
+    }
+
+    &:hover {
+
+        border: 2px solid #1288E8; 
+       
+    }
+}
+
+.overview_bottomSide {
+
+    width: 100%;
+    height: 35%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+
+
+}
+
+
+.crypto_grafic {
+
+    width: 65%;
+    height: 100%;
+   
+}
+
+.cryptoGrafic_topSide {
+
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: 17px;
+        color: white;
+        font-family: $font_Raleway;
+        margin-right: 6%;
+    }
+}
+
+.cryptoGrafic_box {
+
+    width: 100%;
+    height: 86%;
+    background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0f0b38 93.37%);
+
+}
+
+.cryptoGrafic_topSideTitle {
+
+    font-size: 20px;
+    color: white;
+    font-family: $font_Roboto;
+}
+
+
+.recentNews_box {
+
+    width: 32%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0f0b38 93.37%);
+    border-radius: 5px;
+}
+
+@media(max-width : 770px) {
+
+    .modalWidget {
+    
+        img {
+    
+            width:  30%;
+            height: 30%;
+            margin-top: 20%;
+        }
+    
+        p {
+            color: white;
+            margin-top: 30%;
+            font-size: 14px;
+        }
+  
+    }
+
+        
+    .overview_middleSide {
+    
+        width: 100%;
+        height: 37%;
+   
+    
+        div {
+    
+            border-radius: 5px;
+        }
+    }
+
+    
+    .overview_bottomSide {
+    
+        width: 100%;
+        height: 35%;
+        margin-top: 13%;
+      
+    
+    
+    }
+
+    
+}
+
+
+@media(max-width : 430px) {
+
+  
+
+    .modalWidget {
+    
+        img {
+    
+            width:  30%;
+            height: 30%;
+            margin-top: 70%;
+        }
+    
+        p {
+            color: white;
+            margin-top: 30%;
+            font-size: 14px;
+        }
+  
+    }
+
+
+        
+    .cryptoGrafic_topSideTitle {
+    
+        font-size: 13px;
+        margin-left: 10%;
+
+    }
+
+
+    
+    .cryptoGrafic_topSide {
+    
+        width: 100%;
+    
+    
+        p {
+            font-size: 12px;
+            color: white;
+            font-family: $font_Raleway;
+            margin-right: 6%;
+        }
+    }
+
+}
+
+@media(max-width : 380px) {
+
+    .modalWidget {
+    
+        img {
+    
+            width:  30%;
+            height: 30%;
+            margin-top: 70%;
+        }
+    
+        p {
+            color: white;
+            margin-top: 30%;
+            font-size: 12px;
+        }
+  
+    }
+
+
+        
+    .cryptoGrafic_topSideTitle {
+    
+        font-size: 13px;
+        margin-left: 10%;
+
+    }
+
+
+    
+    .cryptoGrafic_topSide {
+    
+        width: 100%;
+    
+    
+        p {
+            font-size: 12px;
+            color: white;
+            font-family: $font_Raleway;
+            margin-right: 6%;
+        }
+    }
+
+}
+
+@media(max-width : 330px) {
+
+    .modalWidget {
+    
+        img {
+    
+            width:  30%;
+            height: 23%;
+            margin-top: 70%;
+        }
+    
+        p {
+            color: white;
+            margin-top: 30%;
+            font-size: 10px;
+        }
+  
+    }
+
+
+        
+    .cryptoGrafic_topSideTitle {
+    
+        font-size: 13px;
+        margin-left: 10%;
+
+    }
+
+
+    
+    .cryptoGrafic_topSide {
+    
+        width: 100%;
+    
+    
+        p {
+            font-size: 12px;
+            color: white;
+            font-family: $font_Raleway;
+            margin-right: 6%;
+        }
+    }
+
+}

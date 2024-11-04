@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+$font_Roboto : "Roboto", sans-serif;
+$font_Raleway : "Raleway", sans-serif;
+
+$underline_color : #1288E8;
+
+
+.profile_cont {
+
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(46.41% 73.99% at 46.63% 48.05%, #20135cd3 0%, #140739cf 92.82%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    
+}
+
+.profile_header {
+
+    width: 94%;
+    height: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+    justify-content: start;
+    padding-top: 10%;
+    
+}
+
+.profileMiddle_side {
+
+    width: 94%;
+    height: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.profile_circle {
+
+    height: 100%;
+    aspect-ratio: 1 / 1; // Ширина указывается одинаковой величой как высота
+    border: 3px solid #1288E8;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.nameBox {
+
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3%;
+    margin-right: 50%;
+
+    p {
+        font-size: 35px;
+        color: white;
+        font-family: $font_Roboto;
+    
+        margin: 0;
+    }
+
+    span {
+
+        font-size: 20px;
+        color: white;
+        font-family: $font_Roboto;
+        opacity: 0.6;
+    }
+}
+
+.profile_changeData_btn {
+
+    width: 110px;
+    height: 30px;
+    background-color: #1288E8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-family: $font_Roboto;
+    cursor: pointer;
+    transition: 0.3s;
+    
+
+    &:hover {
+
+        box-shadow: 0px 0px 10px 4px #1288e8a5;
+
+        
+    }
+
+}
+
+
+.profileBottom_side {
+
+    width: 94%;
+    height: 30%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.name_input_box {
+
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.profile_inputBox {
+
+    width: 40%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    position: relative;
+
+    span {
+        color: white;
+        font-size: 18px;
+        font-family: $font_Roboto;
+    }
+
+    input {
+
+        border-radius: 5px;
+        border: none;
+        background-color:#38406f;
+        height: 49%;
+        margin-top: 3%;
+        padding-left: 5%;
+        color: white;
+        font-size: 18px;
+        outline: none;
+        
+    }
+
+}
+
+.profile_selectorBox {
+
+    width: 96.3%;
+    height: 20%;
+    margin-top: 2.5%;
+    border-radius: 5px;
+}
+
+.profile_unclickable {
+
+    opacity: 0.5;
+    pointer-events: none ;
+}
+
+
+@media (max-width : 1350px) {
+
+    .nameBox {
+    
+        width: 25%;
+        height: 100%;
+        gap: 5%;
+        margin-right: 35%;
+    
+ 
+    }
+
+
+}
+
+
+@media (max-width: 1050px) {
+
+    
+    .nameBox {
+    
+        width: 25%;
+        height: 100%;
+        gap: 5%;
+        margin-right: 34%;
+    
+        p {
+            font-size: 28px;
+            color: white;
+            font-family: $font_Roboto;
+        
+            margin: 0;
+        }
+    
+        span {
+    
+            font-size: 17px;
+            color: white;
+            font-family: $font_Roboto;
+            opacity: 0.6;
+        }
+    }
+
+    
+
+    .profile_inputBox {
+    
+
+        span {
+            font-size: 15px;
+        }
+    
+        input {
+    
+            border-radius: 5px;
+            border: none;
+            background-color:#38406f;
+            height: 49%;
+            margin-top: 3%;
+            padding-left: 5%;
+            color: white;
+            font-size: 15px;
+            outline: none;
+            
+        }
+    
+    }
+
+    
+    .profile_changeData_btn {
+    
+        width: 90px;
+        height: 27px;  
+        font-size: 12px;  
+    
+    
+    }
+
+
+
+}
+
+@media (max-width: 850px) {
+
+    
+    .nameBox {
+    
+        width: 25%;
+        margin-right: 32%;
+    
+        p {
+            font-size: 24px;
+     
+        }
+    
+        span {
+    
+            font-size: 14px;
+   
+        }
+    }
+
+    
+
+    .profile_inputBox {
+    
+
+        span {
+            font-size: 12px;
+        }
+    
+        input {
+    
+            font-size: 12px;
+      
+            
+        }
+    
+    }
+
+    
+    .profile_changeData_btn {
+    
+        width: 80px;
+        height: 23px;  
+        font-size: 10px;  
+    
+    
+    }
+
+
+
+}
+
+@media (max-width: 770px) {
+
+    
+    .nameBox {
+    
+        width: 25%;
+        margin-right: 30%;
+    
+        p {
+            font-size: 20px;
+     
+        }
+    
+        span {
+    
+            font-size: 12px;
+   
+        }
+    }
+
+    
+
+    .profile_inputBox {
+    
+
+        span {
+            font-size: 10px;
+        }
+    
+        input {
+    
+            font-size: 10px;
+      
+            
+        }
+    
+    }
+
+    
+    .profile_changeData_btn {
+    
+        width: 80px;
+        height: 23px;  
+        font-size: 8px;  
+    
+    
+    }
+
+    
+    .profile_circle {
+    
+        height: 70%;
+   
+        margin-bottom: 3%;
+    }
+
+
+
+}
+
+
+@media (max-width: 430px) {
+
+    
+    .nameBox {
+    
+        width: 25%;
+        margin-right: 30%;
+    
+        p {
+            font-size: 15px;
+     
+        }
+    
+        span {
+    
+            font-size: 10px;
+   
+        }
+    }
+
+    
+
+    .profile_inputBox {
+    
+
+        span {
+            font-size: 8px;
+        }
+    
+        input {
+    
+            font-size: 8px;
+            width: 80%;
+            height: 30%;
+        
+      
+            
+        }
+    
+    }
+
+    
+    .profile_changeData_btn {
+    
+        width: 70px;
+        height: 20px;  
+        font-size: 8px;  
+    
+    
+    }
+
+    
+    .profile_circle {
+    
+        height: 60% !important;
+        margin-bottom: 3%;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    .profileMiddle_side {
+
+        width: 94%;
+        height: 18%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    .nameBox {
+    
+        width: 25%;
+        margin-right: 20%;
+        
+        p {
+            font-size: 13px;
+     
+        }
+    
+        span {
+    
+            font-size: 8.3px;
+   
+        }
+    }
+
+    
+
+    .profile_inputBox {
+    
+
+        span {
+            font-size: 7px;
+        }
+    
+        input {
+    
+            font-size: 7px;
+            width: 80%;
+            height: 30%;
+        
+        }
+    
+    }
+
+    
+    .profile_changeData_btn {
+    
+        width: 60px;
+        height: 18px;  
+        font-size: 7px;  
+
+        margin-top: 22%;
+    
+    
+    }
+
+    
+    .profile_circle {
+    
+        height: 65%;
+        margin-bottom: 3%;
+    }
+}
+

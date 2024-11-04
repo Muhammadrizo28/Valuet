@@ -1,0 +1,965 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+$blue_back_gradient : radial-gradient(63.88% 129.61% at 25.55% 31.91%, #20135C 0%, #140739 92.82%);
+$blue_light_color : #1288E8;
+
+$font_Roboto : "Roboto", sans-serif;
+$font_Raleway : "Raleway", sans-serif;
+
+
+@mixin area($area, $color) {
+
+    width:  $area;
+    height: $area;
+    background-color: $color;
+
+}
+
+
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #140739;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+
+
+
+    .bottom_img {
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 80%;
+        z-index: 3;
+        margin: 0 auto;
+        
+    }
+      
+    
+    .middle_img {
+    
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+    
+}
+
+.additional_cont {
+
+    width: 100vw;
+    height: 100vh;
+    background: $blue_back_gradient;
+}
+
+
+.cont {
+
+    width: 1487.5px;
+    height: 787px;
+    margin: 0 auto;
+
+    position: relative;
+  
+
+}
+
+
+
+.title_box {
+
+    width: 295px;
+    height: auto; 
+    position: absolute;
+    right: 350px;
+    bottom: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+    h1 {
+        font-size: 72px;
+        color: $blue_light_color;
+        height: 85px;
+        margin: 0;
+        font-family: $font_Raleway;
+    }
+    
+    div {
+        width: 175px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: $blue_light_color;
+        margin: 10px 0;
+    }
+    
+    span {
+        font-size: 24px;
+        color: white;
+        margin-top: 10px;
+        font-family: $font_Roboto;
+        font-weight: 100;
+        font-style: normal;
+      
+    }
+
+
+}
+
+
+.authorization_block {
+
+    width: 480px;
+    height: 595px;
+    background: linear-gradient(180deg, #1E1156 0%, #0c042173 100%);
+    box-shadow: 0px 25px 25px 0px #00032080;
+    z-index: 4;
+    position: absolute;
+    left: 72px;
+    top: 69px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    h1 {
+
+        font-size: 36px;
+        color: white;
+        font-family: $font_Roboto;
+        margin-top: 82px;
+    }
+
+
+    form {
+
+        width: 380px;
+        height: 248px;
+        margin-top: 52px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .input_box {
+
+            width: 100%;
+            height: 58px;
+            border: none;
+            background-color: #32395E;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .input_box2 {
+
+            width: 100%;
+            height: 58px;
+            border: none;
+            background-color:#32395E;
+            margin-top: 26px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .input_box3 {
+
+            width: 100%;
+            height: 58px;
+            border: none;
+            background-color:#32395E;
+            margin-top: 26px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .input_imgBox {
+
+            width: 67px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+
+                background-image: url('../images/Authorization_page/circle.png');
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-size: cover;
+                @include area(50px, transparent);
+                margin-top: 6px;
+
+
+            }
+
+            img {
+
+                width: 15px;
+                height: 18px;
+                margin-bottom: 6.6px;
+                margin-left: 2px;
+                
+            }
+
+            .pencil_img {
+
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+
+        .inputHoverBox {
+
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;  ////
+            align-items: center;
+
+            &:hover .inputLineHover{
+
+                opacity: 1;
+            }
+
+            .inputLineHover{
+                width: 97%;
+                height: 2px;
+                background-color: #1288E8;
+                border-radius: 8px;
+                opacity: 0;
+                transition: 0.4s;
+                
+            }
+          
+
+
+        }
+
+     
+
+        
+
+        
+
+        input {
+
+            width: 313px;
+            height: 56px;
+            border: none;
+            border-radius: 8px ;
+            outline: none;
+            font-size: 16px;
+            background-color: inherit;
+            color: white;
+
+            &::placeholder {
+
+                color: #616A8B;
+                font-family: $font_Roboto;
+
+                
+            }
+        }
+
+        .passwordInput {
+
+            width: 300px;
+        }
+
+        ::-ms-reveal {
+            filter: invert(100%);
+        }
+
+        .buttons_block {
+
+            width: 242px;
+            height: 42px;
+            margin-top: 64px;
+            display: flex;
+            justify-content: space-between;
+
+            button {
+
+                width: 105px;
+                height: 100%;
+                border: none;
+                font-family: $font_Roboto;
+                border-radius: 8px;
+                cursor: pointer;
+
+            }
+
+            .signUp_button {
+
+                color: #949EC0;
+                background: linear-gradient(88.43deg, #2F3453 11.5%, #242845 76.7%);
+
+            }
+
+            .signIn_button {
+
+                background: linear-gradient(271.88deg, #3887FE 4.26%, #3BA0FF 51.37%, #5FB2FF 99.01%);
+                color: white;
+
+
+            }
+        }
+        .buttons_block2 {
+
+            width: 242px;
+            height: 42px;
+            margin-top: 44px;
+            display: flex;
+            justify-content: space-between;
+
+            button {
+
+                width: 105px;
+                height: 100%;
+                border: none;
+                font-family: $font_Roboto;
+                border-radius: 8px;
+                cursor: pointer;
+
+            }
+
+            .signUp_button {
+
+                color: #949EC0;
+                background: linear-gradient(88.43deg, #2F3453 11.5%, #242845 76.7%);
+
+            }
+
+            .signIn_button {
+
+                background: linear-gradient(271.88deg, #3887FE 4.26%, #3BA0FF 51.37%, #5FB2FF 99.01%);
+                color: white;
+
+
+            }
+        }
+        
+    }
+
+    .form2 {
+
+        width: 380px;
+        height: 332px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.forgotPassword_txt {
+
+    margin-top: 93px;
+    color: #5FB2FF;
+    font-size: 14px;
+    font-family: $font_Roboto;
+    cursor: pointer;
+
+    &:hover {
+
+        text-decoration: underline;
+
+    }
+}
+
+.forgotPassword_txt2 {
+
+    margin-top: 41px;
+    color: #5FB2FF;
+    font-size: 14px;
+    font-family: $font_Roboto;
+    cursor: pointer;
+
+    &:hover {
+
+        text-decoration: underline;
+
+    }
+}
+
+
+.tringle_img {
+
+    position: absolute;
+    @include area(114px, transparent);
+    left : 14px;
+    top: 100px;
+    z-index: 4;
+
+}
+
+.square_img {
+
+    position: absolute;
+    @include area(87px, transparent);
+    left : 527px;
+    top: 80px;
+    z-index: 3;
+
+}
+
+  
+
+.tringleBlue_img {
+
+    position: absolute;
+    @include area(127px, transparent);
+    left : 780px;
+    top: 500px;
+    z-index: 3;
+
+}
+
+.inputLineRed {
+
+    background-color: red;
+    width: 97%;
+    height: 2px;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 1502px) {
+
+    .cont {
+
+        width: 100%;
+        height: 100vh;
+     
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .title_box {
+
+        width: 255px;
+        height: auto; 
+        position: absolute;
+        right: 350px;
+        bottom: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        
+    h1 {
+        font-size: 66px;
+        color: $blue_light_color;
+        height: 85px;
+        margin: 0;
+        font-family: $font_Raleway;
+    }
+    
+    div {
+        width: 175px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: $blue_light_color;
+        margin: 10px 0;
+    }
+    
+    span {
+        font-size: 20px;
+        color: white;
+        margin-top: 10px;
+        font-family: $font_Roboto;
+        font-weight: 100;
+        font-style: normal;
+      
+    }
+    }
+
+    .tringleBlue_img {
+
+        position: absolute;
+        @include area(117px, transparent);
+        left : 740px;
+        top: 500px;
+        z-index: 3;
+    }
+
+
+}
+
+
+@media (max-width: 1230px) { 
+
+
+    .tringleBlue_img {
+
+        position: absolute;
+        @include area(97px, transparent);
+        left : 670px;
+        top: 500px;
+        z-index: 3;
+    }
+
+
+    .title_box {
+
+        width: 255px;
+        height: auto; 
+        position: absolute;
+        right: 200px;
+        bottom: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        
+    h1 {
+        font-size: 66px;
+        color: $blue_light_color;
+        height: 85px;
+        margin: 0;
+        font-family: $font_Raleway;
+    }
+    
+    div {
+        width: 175px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: $blue_light_color;
+        margin: 10px 0;
+    }
+    
+    span {
+        font-size: 20px;
+        color: white;
+        margin-top: 10px;
+        font-family: $font_Roboto;
+        font-weight: 100;
+        font-style: normal;
+      
+    }}
+
+}
+
+
+@media (max-width: 1080px) { 
+
+
+   
+
+    .tringleBlue_img {
+
+        position: absolute;
+        @include area(77px, transparent);
+        left : 550px;
+        top: 440px;
+        z-index: 3;
+    }
+
+
+    .title_box {
+
+        width: 255px;
+        height: fit-content; 
+        position: absolute;
+        right: 150px;
+        bottom: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        
+    h1 {
+        font-size: 50px;
+        color: $blue_light_color;
+        height: 85px;
+        font-family: $font_Raleway;
+        margin-bottom: 8px;
+        height: fit-content;
+    }
+    
+    div {
+        width: 155px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: $blue_light_color;
+        margin: 5px 0;
+    }
+    
+    span {
+        font-size: 16px;
+        color: white;
+        margin-top: 5px;
+        font-family: $font_Roboto;
+        font-weight: 100;
+        font-style: normal;
+      
+    }}
+
+    
+.authorization_block {
+
+    width: 400px;
+    height: 470px;
+    background: linear-gradient(180deg, #1E1156 0%, #0c042173 100%);
+    box-shadow: 0px 25px 25px 0px #00032080;
+    z-index: 4;
+    position: absolute;
+    left: 72px;
+    top: 69px; 
+
+    form {
+
+        margin-top: 20px;
+        width: 230px;
+
+
+        .inputHoverBox {
+
+            width: 100%;
+        }
+
+        .input_box {
+
+            width: 100%;
+            height: 40px;
+        }
+        .input_box2 {
+
+            width: 100%;
+            height: 40px;
+        }
+        .input_box3 {
+
+            width: 100%;
+            height: 40px;
+        }
+
+        .input_imgBox {
+
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+
+                background-image: url('../images/Authorization_page/circle.png');
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-size: cover;
+                @include area(90%, transparent);
+                margin-top: 3px;
+
+
+            }
+
+            img {
+
+                width: 10px;
+                height: 13px;
+                margin-bottom: 3px;
+                margin-left: 1.5px;
+                
+            }
+
+            .pencil_img {
+
+                width: 17px;
+                height: 17px;
+            }
+
+        }
+
+        .passwordInput {
+    
+            width: 75%;
+        }
+
+        input {
+
+            width: 75%;
+            height: 95%;
+            font-size: 13px;
+            
+        }
+
+        .buttons_block {
+
+            width: 202px;
+            height: 40px;
+            margin-top: 34px;
+            display: flex;
+            justify-content: space-between;
+    
+            button {
+    
+                width: 85px;
+                height: 100%;
+                border: none;
+                font-family: $font_Roboto;
+                border-radius: 8px;
+                cursor: pointer;
+    
+            }
+        }
+        .buttons_block2 {
+
+            width: 202px;
+            height: 40px;
+            margin-top: 34px;
+            display: flex;
+            justify-content: space-between;
+    
+            button {
+    
+                width: 85px;
+                height: 100%;
+                border: none;
+                font-family: $font_Roboto;
+                border-radius: 8px;
+                cursor: pointer;
+    
+            }
+        }
+    }
+
+    .form2 {
+
+        width: 230px;
+    }
+
+    h1 {
+
+        margin-top: 40px;
+    }
+
+    span {
+
+        margin-top: 30px;
+    }
+
+    
+    .buttons_block2 {
+    
+        margin-top: 4px;
+    }
+    
+    .forgotPassword_txt {
+    
+        margin-top: 34px;
+        font-size: 14px;
+       
+    }
+    .forgotPassword_txt2 {
+    
+        margin-bottom: 50px;
+        font-size: 14px;
+       
+    }
+
+    
+
+    
+
+}
+
+.square_img {
+
+    @include area(70px, transparent);
+    left : 500px
+}
+
+}
+
+
+@media (max-width : 875px) {
+
+    .cont {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title_box { 
+
+        display: none;
+    }
+
+    .authorization_block { 
+
+        position: static;
+    }
+
+    
+
+    .tringleBlue_img {
+
+        left : 500px;
+        top: 440px;
+        z-index: 4;
+    }
+
+
+}
+
+
+@media(max-width : 578px) {
+
+   
+.tringle_img {
+
+    @include area(84px, transparent);
+    left : 14px;
+    top: 100px;
+    z-index: 4;
+
+}
+
+.square_img {
+
+    @include area(77px, transparent);
+    left : 260px;
+    top: 80px;
+    z-index: 3;
+
+}
+
+  
+
+.tringleBlue_img {
+
+    position: absolute;
+    @include area(87px, transparent);
+    left : 280px;
+    top: 500px;
+    z-index: 3;
+
+}
+
+.authorization_block {
+
+    width: 300px;
+    height: 440px;
+
+
+    .buttons_block2 {
+
+        width: 202px;
+        height: 30px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+
+            width: 85px;
+            height: 100%;
+            border: none;
+            font-family: $font_Roboto;
+            border-radius: 8px;
+            cursor: pointer;
+
+        }
+    }
+    .buttons_block {
+
+        width: 202px;
+        height: 30px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+
+            width: 85px;
+            height: 100%;
+            border: none;
+            font-family: $font_Roboto;
+            border-radius: 8px;
+            cursor: pointer;
+
+        }
+    }
+   
+}
+
+}
+
+@media (max-width : 356px) {
+
+    
+
+    
+.square_img {
+
+    @include area(77px, transparent);
+    left : 230px;
+    top: 80px;
+    z-index: 3;
+
+}
+
+  
+
+.tringleBlue_img {
+
+    position: absolute;
+    @include area(87px, transparent);
+    left : 230px;
+    top: 500px;
+    z-index: 3;
+
+}
+
+
+.authorization_block  {
+
+    h1 {
+
+        font-size: 34px;
+    }
+
+}
+
+
+}
+
+
+
+
+
+
+  
+
+
+
+  

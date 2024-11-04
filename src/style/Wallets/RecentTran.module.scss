@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+$font_Roboto : "Roboto", sans-serif;
+$font_Raleway : "Raleway", sans-serif;
+
+$underline_color : #1288E8;
+
+.recentTran_cont {
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(176.95deg, rgba(27, 18, 78, 0.2) -32.8%, #0F0B38 88.83%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    position: relative;
+
+
+}
+
+.recentTran_header {
+
+    width: 90%;
+    height: 13%;
+    border-bottom: 1px solid $underline_color;
+    display: flex;
+    align-items: end;
+
+    h4 {
+        color: white;
+        font-family: $font_Raleway;
+        margin-bottom: 2%;
+        font-size: 15.5px;
+
+    }
+}
+
+.recentTran_box {
+
+    width: 90%;
+    height: 83%;
+    max-height: 83%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: 5%;
+
+}
+
+.recentTran_item {
+
+    width: 100%;
+    min-height: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.firstBox_info {
+
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+
+        color: white;
+        font-size: 15px;
+    }
+}
+
+.recentTran_circle {
+
+    height: 45%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid $underline_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    img {
+
+        width: 80%;
+        height: 90%;
+        margin-bottom: 25%;
+        margin-left: 7%;
+        transform: rotate(180deg);
+    }
+
+}
+
+.secondBox_info {
+
+    width: 79%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.recentTran_textBox {
+
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    font-family: $font_Roboto;
+
+}
+
+.recentTran_wallet {
+
+    font-size: 17px;
+    color: white;
+}
+
+.recentTran_person {
+
+    font-size: 15px;
+    color: white;
+
+}
+
+.recentTran_quentity {
+
+    font-size: 16px;
+    color: white;
+    font-family: $font_Roboto;
+    margin-right: 5%;
+    
+}
+
+.scroller_div {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(176.95deg, rgba(27, 18, 78, 0.2) -32.8%, #0F0B38 88.83%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+
+    img {
+
+        height: 80%;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+
+}
+
+.scroller_div2 {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    img {
+
+        height: 80%;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+
+}
+
+.imgDown {
+
+    transform: rotate(0);
+
+}
+
+.imgUp {
+
+    transform: rotate(180deg);
+
+}
+
+
+
+
+
+@media (max-width : 1300px) {
+
+    .recentTran_header {
+    
+        h4 {
+    
+            font-size: 13.5px;
+    
+        }
+    }
+    
+    
+    .recentTran_item {
+    
+        min-height: 50px;
+        height: 50px;
+      
+    }
+    
+        
+    .firstBox_info {
+    
+    
+        span {
+    
+    
+            font-size: 12px;
+        }
+    }
+    
+    
+    .recentTran_circle {
+    
+        height: 35%;
+       
+    }
+    
+    
+    .recentTran_wallet {
+    
+        font-size: 14px;
+    }
+    
+    .recentTran_person {
+    
+        font-size: 12px;
+    
+    }
+    
+    .recentTran_quentity {
+    
+        font-size: 14.5px;
+    
+        
+    }
+
+}
+
+@media (max-width : 1000px) {
+
+    .recentTran_header {
+    
+        h4 {
+    
+            font-size: 12.3px;
+    
+        }
+    }
+    
+    
+    .recentTran_item {
+    
+        min-height: 45px;
+        height: 45px;
+      
+    }
+    
+        
+    .firstBox_info {
+    
+    
+        span {
+    
+    
+            font-size: 11px;
+        }
+    }
+    
+    
+    .recentTran_circle {
+    
+        height: 35%;
+       
+    }
+    
+    
+    .recentTran_wallet {
+    
+        font-size: 12px;
+    }
+    
+    .recentTran_person {
+    
+        font-size: 10px;
+    
+    }
+    
+    .recentTran_quentity {
+    
+        font-size: 13px;
+    
+        
+    }
+
+}
+
+@media (max-width : 770px) {
+
+    .recentTran_header {
+    
+        h4 {
+    
+            font-size: 8px;
+    
+        }
+    }
+    
+    
+    .recentTran_item {
+    
+        min-height: 30px;
+        height: 30px;
+      
+    }
+    
+        
+    .firstBox_info {
+    
+    
+        span {
+    
+    
+            font-size: 7px;
+        }
+    }
+    
+    
+    .recentTran_circle {
+    
+        height: 30%;
+        border: 1px solid $underline_color;
+       
+    }
+    
+    
+    .recentTran_wallet {
+    
+        font-size: 8px;
+    }
+    
+    .recentTran_person {
+    
+        font-size: 7px;
+    
+    }
+    
+    .recentTran_quentity {
+    
+        font-size: 8px;
+    
+        
+    }
+}
+
+
+@media (max-width : 380px) {
+
+    .recentTran_header {
+    
+        h4 {
+    
+            font-size: 7px;
+    
+        }
+    }
+    
+    
+    .recentTran_item {
+    
+        min-height: 27px;
+        height: 27px;
+      
+    }
+    
+        
+    .firstBox_info {
+    
+    
+        span {
+    
+    
+            font-size: 5px;
+        }
+
+
+        width: 18%;
+    }
+    
+    
+    .recentTran_circle {
+    
+        height: 28%;
+        border: 1px solid $underline_color;
+       
+    }
+    
+    
+    .recentTran_wallet {
+    
+        font-size: 5px;
+
+    }
+    
+    .recentTran_person {
+    
+        font-size: 4px;
+    
+    }
+    
+    .recentTran_quentity {
+    
+        font-size: 5px;
+    
+        
+    }
+
+    
+    .scroller_div2 {
+    
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+    
+        img {
+    
+            height: 50%;
+            aspect-ratio: 1 / 1;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+    
+    
+    }
+}

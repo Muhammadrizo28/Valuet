@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+$font_Roboto : "Roboto", sans-serif;
+$font_Raleway : "Raleway", sans-serif;
+
+$underline_color : #1288E8;
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+
+.balanceWidget {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    box-shadow: 0px 4px 25px 0px #00000040;
+}
+
+
+
+.chartContainer {
+
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    position: relative;
+    z-index: 2;
+    
+
+      
+    .balanceContainer {
+
+        color: white;
+        width: fit-content;
+        font-family: $font_Roboto;
+        position: absolute;
+        width: 25%;
+        height: 30%;
+        top: 34%;
+        left: 37.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10%;
+       
+
+        p {
+
+            font-size: 18px;
+            margin-top: 15%;
+            color: #1288E8;
+            font-family: $font_Raleway;
+        }
+    
+    }
+}
+
+.chartOptions_div {
+
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    align-items: center;
+
+}
+
+.chartOption {
+
+    width: 85%;
+    height: 24%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+
+        
+    span {
+
+        font-family: $font_Roboto;
+        color : white;
+        font-size: 14px
+        
+    };
+ 
+    
+}
+
+.cryptoName_div {
+
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: $font_Roboto;
+    gap: 5px;
+
+
+    div {
+
+        width:  17px;
+        height: 17px;
+        border-radius: 50%;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+@media(max-width : 1024px) {
+
+    
+    .chartContainer {
+     
+        .balanceContainer {
+    
+    
+            p {
+    
+                font-size: 13px;
+    
+            }
+    
+            span {
+                font-size: 13px;
+            }
+        
+        }
+    }
+
+    
+.chartOption {
+
+
+    span {
+
+        font-size: 11px
+        
+    };
+ 
+    
+}
+
+
+
+    
+    .cryptoName_div {
+    
+      
+        gap: 5px;
+    
+    
+        div {
+    
+            width:  15px;
+            height: 15px;
+
+        }
+
+        span {
+
+            font-size: 11px;
+
+        }
+    
+       
+    }
+
+    
+}
+
+@media(max-width : 768px) {
+
+    
+    .chartContainer {
+     
+        .balanceContainer {
+    
+    
+            p {
+    
+                font-size: 7.5px;
+    
+            }
+    
+            span {
+                font-size: 7px;
+            }
+        
+        }
+    }
+
+    
+.chartOption {
+
+
+    span {
+
+        font-size: 7px
+        
+    };
+ 
+    
+}
+
+
+
+    
+    .cryptoName_div {
+    
+      
+        gap: 3px;
+    
+    
+        div {
+    
+            width:  9px;
+            height: 9px;
+
+        }
+
+        span {
+
+            font-size: 7px;
+
+        }
+    
+       
+    }
+
+    
+}
+
+
+@media(max-width : 686px) {
+
+.chartContainer {
+
+
+    .balanceContainer {
+
+        color: white;
+        width: fit-content;
+        font-family: $font_Roboto;
+        position: absolute;
+        width: 25%;
+        height: 30%;
+        top: 27%;
+        left: 37.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10%;
+       
+
+    
+    
+    }
+}
+
+    
+}
+
+
+@media(max-width : 330px) {
+
+    .chartContainer {
+
+        margin-top: 30%;
+    
+    
+        .balanceContainer {
+    
+            color: white;
+            width: fit-content;
+            font-family: $font_Roboto;
+            position: absolute;
+            width: 25%;
+            height: 30%;
+            top: 22%;
+            left: 37.5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10%;
+
+            span {
+
+                font-size: 6px;
+            }
+
+            p {
+                font-size: 6px;
+            }
+        
+        }
+    }
+
+    
+}
+

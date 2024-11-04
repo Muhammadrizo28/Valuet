@@ -1,0 +1,21 @@
+
+.container {
+
+    width: 82vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(46.41% 73.99% at 46.63% 48.05%, #20135C 0%, #140739 92.82%);
+    position: relative;
+}
+
+@media (max-width : 586px){
+
+    .container {
+
+        width: 100vw;
+    }
+
+
+
+}

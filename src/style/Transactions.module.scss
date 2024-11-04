@@ -1,0 +1,883 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+$font_Roboto : "Roboto", sans-serif;
+$font_Raleway : "Raleway", sans-serif;
+
+$underline_color : #1288E8;
+
+.transactions_cont {
+
+    width: 100%;
+    height: 85%;
+    margin-top: 1%;
+}
+
+.transactions_topSide {
+
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: $font_Roboto;
+    
+}
+
+.transactions_navigation {
+
+    width: 23%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.navigation_item {
+
+    width: 32%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 5%;
+
+
+    span {
+
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 13px;
+        margin-top: 10%;
+  
+    }
+
+
+    div {
+        width: 0%;
+        height: 1.5px;
+        background-color: $underline_color;
+        transition: 0.4s;
+    }
+
+    &:hover div {
+
+        width: 100%;
+    }
+    &:hover span {
+
+        color: white;
+    }
+}
+
+.clicked {
+
+    width: 32%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #32395E;
+    border-radius: 3px 3px 0px 0px;
+    margin-top: 5%;
+
+
+    span {
+
+        color: white;
+        font-size: 13px;
+        margin-top: 10%;
+  
+    }
+
+
+    div {
+        width: 100%;
+        height: 1.5px;
+        background-color: $underline_color;
+        transition: 0.4s;
+    }
+    
+}
+
+
+.transactions_box {
+
+    width: 100%;
+    height: 92%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    
+}
+
+.transaction_item {
+
+    width: 99%;
+    height: 65px;
+    min-height: 65px;
+    background: #2e355867;
+    box-shadow: 0px 4px 8px 0px #0000000D;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.transactions_box::-webkit-scrollbar {
+    height: 4px;
+    width: 7px;
+    transition: 0.4s;
+}
+
+.transactions_box::-webkit-scrollbar-thumb {
+    transition: 0.4s;
+    background-color: #1288e8;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.transactions_box::-webkit-scrollbar-track {
+    transition: 0.4s;
+    background-color: #2c355e;
+    border-radius: 4px;
+}
+
+.transactions_box::-webkit-scrollbar-thumb:hover {
+    background-color: #c7c6dd;
+    cursor: grab;
+}
+
+
+.transaction_itemTop {
+
+    width: 14%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3.5%;
+
+    span {
+
+        color: white;
+        font-family: $font_Roboto;
+        font-size: 15px;
+    }
+}
+
+.transaction_itemCircle {
+
+    height: 60%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid $underline_color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+
+        width: 60%;
+        height: 60%;
+
+    }
+}
+
+
+.transaction_itemMiddle {
+
+    width: 23%;
+    height: 100%;
+    margin-right: 26%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+
+        transform: rotate(-90deg);
+        width: 35px;
+        height: 40px;
+    }
+
+    span {
+        font-size: 17px;
+        color: white;
+    }
+}
+
+.transaction_itemMiddle2 {
+
+    width: 25%;
+    height: 100%;
+    margin-right: 24%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+
+    img {
+
+        transform: rotate(-90deg);
+        width: 35px;
+        height: 40px;
+    }
+
+    span {
+        font-size: 17px;
+        color: white;
+    }
+}
+
+
+
+.transaction_itemBottom {
+
+    width: 17%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2%;
+    font-family: $font_Roboto;
+
+    span {
+        color: white;
+        font-size: 16px;
+    }
+
+    div {
+        width: 40%;
+        height: 50%;
+        background: #32395E;
+        color: white;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+}
+
+@media(max-width : 1300px) {
+
+    .transaction_itemTop {
+    
+    
+        span {
+    
+            font-size: 13px;
+        }
+    }
+
+    .transaction_itemCircle {
+
+        height: 55%;
+    
+        img {
+    
+            width: 60%;
+            height: 60%;
+    
+        }
+    }
+    
+    
+    .transaction_itemMiddle {
+    
+        img {
+    
+            width: 33px;
+            height: 38px;
+        }
+    
+        span {
+            font-size: 15px;
+    
+        }
+    }
+
+    .transaction_itemMiddle2 {
+
+        img {
+    
+            transform: rotate(-90deg);
+            width: 33px;
+            height: 38px;
+        }
+    
+        span {
+            font-size: 15px;
+        }
+    }
+    
+    .transaction_itemBottom {
+    
+        span {
+            font-size: 15px;
+        }
+    
+        div {
+            font-size: 11px;
+        }
+    }
+
+
+}
+
+
+@media(max-width : 1130px) {
+
+    .transactions_navigation {
+    
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    
+    .navigation_item {
+     
+        span {
+    
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 11px;
+            margin-top: 10%;
+      
+        } 
+
+    }
+
+    
+    .clicked {
+
+        span {
+    
+            font-size: 11px;
+      
+        } 
+    }
+
+    .transaction_itemTop {
+
+        width: 16%;
+
+        span {
+    
+            font-size: 11px;
+        }
+    }
+
+    .transaction_itemCircle {
+
+        height: 55%;
+  
+    }
+    
+    .transaction_itemMiddle {
+
+        
+        width: 26%;
+        margin-right: 18%;
+     
+    
+        img {
+    
+            width: 28px;
+            height: 32px;
+        }
+    
+        span {
+            font-size: 13px;
+    
+        }
+    }
+
+    
+    .transaction_itemMiddle2 {
+    
+        width: 21%;
+        height: 100%;
+        margin-right: 23%;
+  
+    
+        img {
+    
+            width: 28px;
+            height: 32px;
+        }
+    
+        span {
+            font-size: 13px;
+        }
+    }
+    
+    .transaction_itemBottom {
+    
+        span {
+            font-size: 13px;
+        }
+    
+        div {
+            font-size: 9px;
+        }
+    }
+
+    .transactions_box::-webkit-scrollbar {
+        width: 5px;
+      
+    }
+}
+
+
+@media(max-width : 900px) {
+
+    .navigation_item {
+     
+        span {
+    
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 9px;
+            margin-top: 10%;
+      
+        } 
+    }
+
+    .clicked {
+
+        span {
+    
+            font-size: 9px;
+      
+        } 
+    }
+
+    .transaction_item {
+
+        width: 99%;
+        height: 50px;
+        min-height: 50px;
+
+    }
+
+    .transaction_itemTop {
+
+        width: 17%;
+
+        span {
+    
+            font-size: 10px;
+        }
+    }
+
+    .transaction_itemCircle {
+
+        height: 50%;
+  
+    }
+    
+    .transaction_itemMiddle {
+
+        
+        width: 25%;
+        margin-right: 12%;
+     
+    
+        img {
+    
+            width: 25px;
+            height: 29px;
+        }
+    
+        span {
+            font-size: 11px;
+    
+        }
+    }
+
+    .transaction_itemMiddle2 {
+    
+        width: 20%;
+        margin-right: 17%;
+     
+    
+        img {
+    
+            transform: rotate(-90deg);
+            width: 25px;
+            height: 29px;
+        }
+    
+        span {
+            font-size: 11px;
+        }
+    }
+    
+    .transaction_itemBottom {
+    
+        span {
+            font-size: 11px;
+        }
+    
+        div {
+            font-size: 8px;
+        }
+    }
+
+}
+
+
+@media(max-width : 768px) {
+
+    .navigation_item {
+
+        height: 40%;
+
+     
+        span {
+    
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 7px;
+            margin-top: 10%;
+      
+        } 
+    }
+
+    .clicked {
+
+        height: 40%;
+
+
+        span {
+    
+            font-size: 7px;
+        } 
+    }
+
+    .transaction_item {
+
+        width: 99%;
+        height: 44px;
+        min-height: 44px;
+
+    }
+
+    .transaction_itemTop {
+
+        width: 17%;
+
+        span {
+    
+            font-size: 10px;
+        }
+    }
+
+    .transaction_itemCircle {
+
+        height: 48%;
+  
+    }
+    
+    .transaction_itemMiddle {
+
+        
+        width: 26%;
+        margin-right: 12%;
+     
+    
+        img {
+    
+            width: 21px;
+            height: 25px;
+        }
+    
+        span {
+            font-size: 9.5px;
+    
+        }
+    }
+
+    .transaction_itemMiddle2 {
+    
+        width: 21%;
+        height: 100%;
+        margin-right: 17%;
+    
+        img {
+    
+            width: 21px;
+            height: 25px;
+        }
+    
+        span {
+            font-size: 9.5px;
+        }
+    }
+    
+    .transaction_itemBottom {
+    
+        span {
+            font-size: 9.5px;
+        }
+    
+        div {
+            font-size: 6.5px;
+        }
+    }
+}
+
+
+
+
+
+@media(max-width : 430px) {
+
+        
+    .transactions_navigation {
+    
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    .navigation_item {
+
+        height: 40%;
+
+     
+        span {
+    
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 6px;
+            margin-top: 10%;
+      
+        } 
+    }
+
+    .clicked {
+
+        height: 40%;
+
+
+        span {
+    
+            font-size: 6px;
+        } 
+    }
+
+    .transaction_item {
+
+        width: 99%;
+        height: 38px;
+        min-height: 38px;
+
+    }
+
+    .transaction_itemTop {
+
+        width: 17%;
+
+        span {
+    
+            font-size: 7.5px;
+        }
+    }
+
+    .transaction_itemCircle {
+
+        height: 48%;
+  
+    }
+    
+    .transaction_itemMiddle {
+
+        
+        width: 26%;
+        margin-right: 12%;
+     
+    
+        img {
+    
+            width: 21px;
+            height: 25px;
+        }
+    
+        span {
+            font-size: 7px;
+    
+        }
+    }
+
+    .transaction_itemMiddle2 {
+    
+        width: 30%;
+        height: 100%;
+        margin-right: 17%;
+    
+        img {
+    
+            width: 18px;
+            height: 22px;
+        }
+    
+        span {
+            font-size: 8px;
+        }
+    }
+    
+    .transaction_itemBottom {
+
+        width: 22%;
+    
+        span {
+            font-size: 8px;
+        }
+    
+        div {
+            font-size: 5.5px;
+            height: 40%;
+            width: 40px;
+        }
+    }
+}
+
+
+
+@media(max-width : 340px) {
+
+    .transactions_topSide {
+
+        h3 {
+
+            font-size: 12px;
+        }
+    }
+
+        
+    .transactions_navigation {
+    
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation_item {
+
+        height: 40%;
+
+     
+        span {
+    
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 6px;
+            margin-top: 10%;
+      
+        } 
+
+        div {
+
+            height: 1px;
+        }
+    }
+
+    .clicked {
+
+        height: 40%;
+
+
+        span {
+    
+            font-size: 5px;
+        } 
+    }
+
+    .transaction_item {
+
+        width: 99%;
+        height: 38px;
+        min-height: 38px;
+
+    }
+
+    .transaction_itemTop {
+
+        width: 17%;
+
+        span {
+    
+            font-size: 6px;
+        }
+    }
+
+    .transaction_itemCircle {
+
+        height: 48%;
+  
+    }
+    
+    .transaction_itemMiddle {
+
+        
+        width: 26%;
+        margin-right: 12%;
+     
+    
+        img {
+    
+            width: 19px;
+            height: 23px;
+        }
+    
+        span {
+            font-size: 6px;
+    
+        }
+    }
+
+    .transaction_itemMiddle2 {
+    
+        width: 30%;
+        height: 100%;
+        margin-right: 17%;
+    
+        img {
+    
+            width: 16px;
+            height: 20px;
+        }
+    
+        span {
+            font-size: 7px;
+        }
+    }
+    
+    .transaction_itemBottom {
+
+        width: 22%;
+    
+        span {
+            font-size: 6px;
+        }
+    
+        div {
+            font-size: 5.5px;
+            height: 40%;
+            width: 30px;
+        }
+    }
+}
+

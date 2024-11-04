@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.modalBox {
+
+    width: 22%;
+    height: 7%;
+    background-color:  #0376d4d4;
+    position: absolute;
+    top: 4%;
+    right: -20%;
+    z-index: 6;
+    border-radius: 8px 0 0 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    animation: move 8s forwards;
+
+}
+
+p {
+
+    margin-left: 5%;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+}
+
+@keyframes move {
+
+    from {
+
+        right: -25%;
+       
+    }
+
+    10% {
+
+        right: -5%;
+      
+    }
+
+    90% {
+
+        right: -5%;
+    
+    }
+
+    95% {
+
+        right: -25%;
+    }
+
+    to {
+
+        right: -25%;
+        display: none;
+       
+        
+    }
+
+    
+    
+}
+

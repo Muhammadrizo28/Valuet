@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+$font_Roboto : "Roboto", sans-serif;
+$font_Raleway : "Raleway", sans-serif;
+
+$underline_color : #1288E8;
+
+
+.exchange_cont {
+
+    width: 100%;
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.exchange_box {
+
+    width: 90%;
+    height: 70%;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 2%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.exchange_coinsBox {
+
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+    img {
+
+        width: 120px;
+        height: 30px;
+    }
+}
+
+.coinBox {
+
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    span {
+        font-size: 25px;
+        color: white;
+        font-family: $font_Roboto;
+    }
+
+    div {
+
+        height: 90%;
+        aspect-ratio: 1 / 1;
+        border: 2px solid $underline_color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+
+            width: 60%;
+            height: 60%;
+
+        }
+    }
+}
+
+.exchange_inputBox {
+
+    width: 82%;
+    height: 20%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input_box {
+
+    width: 36%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+.exchange_info {
+
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+
+        width: 35%;
+        height: 100%;
+        border: none;
+        padding-left: 32%;
+        background-color: transparent;
+        color: white;
+        font-size: 19px;
+        outline: none;
+    }
+
+}
+
+.selectorBox {
+
+    width: 30%;
+    height: 100%;
+
+    span {
+
+        color: white;
+        font-size: 20px;
+        font-family: $font_Roboto;
+    }
+
+}
+
+.exchange_line {
+
+    width: 100%;
+    height: 3px;
+    background-color: $underline_color;
+    border-radius: 1px;
+}
+
+.redLine {
+
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    border-radius: 1px;
+}
+
+.balance_txt {
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 17px;
+    font-family: $font_Roboto;
+}
+
+.balance_txt2 {
+
+    color: rgba(255, 255, 255, 1);
+    font-size: 17px;
+    font-family: $font_Roboto;
+}
+
+.exchange_button {
+
+    width: 170px;
+    height: 35px;
+    border: none;
+    background-color: #1288E8;
+    border-radius: 5px;
+    color: white;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+
+        box-shadow: 0px 0px 10px 4px #1288e8a5;
+
+    }
+}
+
+
+
+@media(max-width : 1300px) {
+
+
+    .exchange_coinsBox {
+
+        width: 100%;
+        height: 30%;
+        gap: 5%;
+    
+        img {
+    
+            width: 110px;
+            height: 28px;
+        }
+    }
+
+    .coinBox {
+
+        width: 30%;
+        height: 90%;
+
+    
+        span {
+            font-size: 19px;
+            color: white;
+        }
+    
+        div {
+    
+            height: 90%;
+            aspect-ratio: 1 / 1;
+            border: 2px solid $underline_color;
+            border-radius: 50%;
+    
+            img {
+    
+                width: 60%;
+                height: 60%;
+    
+            }
+        }
+    }
+
+    
+    .exchange_info {
+    
+        width: 100%;
+        height: 45%;
+
+    
+        input {
+    
+            width: 35%;
+            height: 100%;
+            padding-left: 32%;
+            font-size: 17px;
+    
+        }
+    
+    }
+
+    
+    .selectorBox {
+    
+        width: 30%;
+        height: 100%;
+    
+        span {
+    
+            font-size: 18px;
+        }
+    
+    }
+
+    
+    .balance_txt {
+    
+        font-size: 15px;
+
+    }
+    
+    .balance_txt2 {
+    
+        font-size: 15px;
+    }
+    
+    .exchange_button {
+    
+        width: 160px;
+        height: 33px;
+        margin-top: 5%;
+       
+    }
+        
+}
+
+
+
+
+@media(max-width : 1000px) {
+
+
+    .exchange_coinsBox {
+
+        width: 100%;
+        height: 28%;
+        gap: 5%;
+    
+        img {
+    
+            width: 95px;
+            height: 23px;
+        }
+    }
+
+    .coinBox {
+
+        width: 30%;
+        height: 85%;
+
+    
+        span {
+            font-size: 15px;
+        }
+    
+        div {
+    
+            height: 90%;
+            aspect-ratio: 1 / 1;
+            border: 2px solid $underline_color;
+            border-radius: 50%;
+    
+            img {
+    
+                width: 60%;
+                height: 60%;
+    
+            }
+        }
+    }
+
+    
+    .exchange_info {
+    
+        width: 100%;
+        height: 45%;
+    
+        input {
+    
+            width: 35%;
+            height: 100%;
+            padding-left: 32%;
+            font-size: 13px;
+    
+        }
+    
+    }
+
+    
+    .selectorBox {
+    
+        width: 30%;
+        height: 100%;
+    
+        span {
+    
+            font-size: 13px;
+        }
+    }
+
+    
+    .balance_txt {
+    
+        font-size: 12px;
+
+    }
+    
+    .balance_txt2 {
+    
+        font-size: 12px;
+
+    }
+    
+    .exchange_button {
+    
+        width: 110px;
+        height: 29px;
+        margin-top: 5%;
+        font-size: 12px;
+    }
+        
+}
+
+
+
+
+@media(max-width : 800px) {
+
+
+    .exchange_coinsBox {
+
+        width: 100%;
+        height: 28%;
+        gap: 5%;
+    
+        img {
+    
+            width: 80px;
+            height: 20px;
+        }
+    }
+
+    .coinBox {
+
+        width: 30%;
+        height: 75%;
+
+    
+        span {
+            font-size: 12px;
+        }
+    
+        div {
+    
+            height: 90%;
+            aspect-ratio: 1 / 1;
+            border: 2px solid $underline_color;
+            border-radius: 50%;
+    
+            img {
+    
+                width: 60%;
+                height: 60%;
+    
+            }
+        }
+    }
+
+    
+    .exchange_info {
+    
+        width: 100%;
+        height: 45%;
+    
+        input {
+    
+            width: 35%;
+            height: 100%;
+            padding-left: 32%;
+            font-size: 10px;
+    
+        }
+    
+    }
+
+    
+    .selectorBox {
+    
+        width: 30%;
+        height: 100%;
+    
+        span {
+    
+            font-size: 10px;
+        }
+    }
+
+    
+    .balance_txt {
+    
+        font-size: 10px;
+
+    }
+    
+    .balance_txt2 {
+    
+        font-size: 10px;
+
+    }
+    
+    .exchange_button {
+    
+        width: 90px;
+        height: 23px;
+        margin-top: 5%;
+        font-size: 10px;
+
+       
+    }
+        
+}
+
+
+
+@media(max-width : 430px) {
+
+
+    .exchange_coinsBox {
+
+        width: 100%;
+        height: 28%;
+        gap: 5%;
+    
+        img {
+    
+            width: 60px;
+            height: 17px;
+        }
+    }
+
+    .coinBox {
+
+        width: 30%;
+        height: 75%;
+
+    
+        span {
+            font-size: 8px;
+        }
+    
+        div {
+    
+            height: 65%;
+            aspect-ratio: 1 / 1;
+            border: 2px solid $underline_color;
+            border-radius: 50%;
+    
+            img {
+    
+                width: 50%;
+                height: 50%;
+    
+            }
+        }
+    }
+
+    
+    .exchange_info {
+    
+        width: 100%;
+        height: 45%;
+    
+        input {
+    
+            width: 35%;
+            height: 100%;
+            padding-left: 32%;
+            font-size: 8px;
+    
+        }
+    
+    }
+
+    
+    .selectorBox {
+    
+        width: 30%;
+        height: 100%;
+    
+        span {
+    
+            font-size: 8px;
+        }
+    }
+
+    
+    .balance_txt {
+    
+        font-size: 8px;
+
+    }
+    
+    .balance_txt2 {
+    
+        font-size: 8px;
+
+    }
+    
+    .exchange_button {
+    
+        width: 70px;
+        height: 20px;
+        margin-top: 5%;
+        font-size: 8px;
+
+       
+    }
+
+        
+    
+    .exchange_line {
+    
+        width: 100%;
+        height: 2px;
+        background-color: $underline_color;
+        border-radius: 1px;
+    }
+    
+    .redLine {
+    
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        border-radius: 1px;
+    }
+        
+}
+
+@media(max-width : 340px) {
+
+
+    .exchange_coinsBox {
+
+        width: 100%;
+        height: 28%;
+        gap: 5%;
+    
+        img {
+    
+            width: 40px;
+            height: 12px;
+        }
+    }
+
+    .coinBox {
+
+        width: 30%;
+        height: 75%;
+
+    
+        span {
+            font-size: 6.5px;
+        }
+    
+        div {
+    
+            height: 65%;
+            aspect-ratio: 1 / 1;
+            border: 2px solid $underline_color;
+            border-radius: 50%;
+    
+            img {
+    
+                width: 50%;
+                height: 50%;
+    
+            }
+        }
+    }
+
+    
+    .exchange_info {
+    
+        width: 100%;
+        height: 45%;
+    
+        input {
+    
+            width: 35%;
+            height: 100%;
+            padding-left: 32%;
+            font-size: 6.6px;
+    
+        }
+    
+    }
+
+    
+    .selectorBox {
+    
+        width: 30%;
+        height: 100%;
+    
+        span {
+    
+            font-size: 6.5px;
+        }
+    }
+
+    
+    .balance_txt {
+    
+        font-size: 6.6px;
+
+    }
+    
+    .balance_txt2 {
+    
+        font-size: 6.5px;
+
+    }
+    
+    .exchange_button {
+    
+        width: 50px;
+        height: 16px;
+        margin-top: 5%;
+        font-size: 6.5px;
+
+       
+    }
+
+        
+    
+    .exchange_line {
+    
+        width: 100%;
+        height: 1.5px;
+        background-color: $underline_color;
+        border-radius: 1px;
+    }
+    
+    .redLine {
+    
+        width: 100%;
+        height: 1.5px;
+        background-color: red;
+        border-radius: 1px;
+    }
+        
+}
+
+
